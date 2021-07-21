@@ -61,7 +61,7 @@ def nisa_projection_plotly(years=30, annual_deposit=80, initial_budget=100):
 
   Returns:
   --------------
-    pyplot figures. 
+    plotly figures. 
   
   """
 
