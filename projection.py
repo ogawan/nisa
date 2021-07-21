@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 
-def nisa_projection(years=30, annual_deposit=600000, initial_budget=1000000):
+def nisa_projection(years=30, annual_deposit=80, initial_budget=100):
   """
   This is a function to plot deposit of TSUMITATE NISA
 
@@ -19,7 +19,7 @@ def nisa_projection(years=30, annual_deposit=600000, initial_budget=1000000):
   
   """
 
-  for j in [1.01, 1.02, 1.03, 1.04, 1.05]:
+  for j in [1.00,1.01, 1.02, 1.03, 1.04, 1.05]:
     
     original = initial_budget
     ganbon = []
@@ -38,8 +38,8 @@ def nisa_projection(years=30, annual_deposit=600000, initial_budget=1000000):
         ganbon.append(gan)
     
     plt.scatter(list(range(0,years)), box)
-    plt.scatter(list(range(0,years)), ganbon, c="red")
-    plt.xlabel("years")
-    plt.ylabel("money (yen)")
+    plt.legend(["0%", "1%", "2%", "3%", "4%", "5%"])
+    plt.xlabel("Years")
+    plt.ylabel("Money (Man yen)")
 
-nisa_projection(30, 6000000, 1000000)
+nisa_projection(30, 80, 100)
