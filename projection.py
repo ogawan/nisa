@@ -15,7 +15,7 @@ def nisa_projection(years=30, annual_deposit=80, initial_budget=100):
 
   Returns:
   --------------
-    pyplot figures. 
+    matplotlib figure
   
   """
 
